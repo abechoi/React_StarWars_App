@@ -9,15 +9,8 @@ const fetchPlanets = async (key, greeting, page) => {
 }
 
 const Planets = () => {
-
   const [ page, setPage ] = useState(1);
-  const { data, status } = useQuery(['planets', 'Hello ninjas', 2], fetchPlanets);/*, {
-    staleTime: 0,
-    cacheTime: 0,
-    onSuccess: () => console.log('Fetched data.')
-  });*/
-
-  console.log(data);
+  const { data, status } = useQuery(['planets', 'hello, ninjas', page], fetchPlanets);
 
   return (
     <div>
@@ -27,19 +20,19 @@ const Planets = () => {
       <button onClick={() => setPage(2)}>page 2</button>
       <button onClick={() => setPage(3)}>page 3</button>
 
-      { status === 'loading' && (
-        <div>Loading data...</div>
+      {status === 'loading' && (
+        <div>Loading data</div>
       )}
-      { status === 'error' && (
+
+      {status === 'error' && (
         <div>Error fetching data</div>
       )}
-      { status === 'success' && (
+
+      {status === 'success' && (
         <div>
-          { data.results.map(planet => (
-            <Planet key={ planet.name } planet={ planet }/>
-          ))}
+          { data.results.map(planet => <Planet key={planet.name} planet={planet} /> ) }
         </div>
-      )}
+      )} 
     </div>
   );
 }
