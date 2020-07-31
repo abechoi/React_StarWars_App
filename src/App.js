@@ -17,7 +17,7 @@ function App() {
         { page === 'planets' ? <Planets /> : <People /> }
       </div>
     </div>
-    <ReactQueryDevtools initalIsOpen={true} /> 
+    <ReactQueryDevtools initalIsOpen={false} /> 
     </>
   );
 }
