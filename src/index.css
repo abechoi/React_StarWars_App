@@ -9,19 +9,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
 .App{
-  width: 960px;
+  width: 300px;
   margin: auto;
 }
 h1{
-  color: #ffff57;
-  font-size: 4em;
+  color: #FDF200;
+  font-size: 2rem;
   letter-spacing: 2px;
 }
 button{
@@ -31,7 +28,7 @@ button{
   border-radius: 20px;
   padding: 10px;
   color: #ccc;
-  font-size: 1.2em;
+  font-size: 1rem;
   cursor: pointer;
 }
 button:hover{
@@ -39,13 +36,14 @@ button:hover{
   border-color: #fff;
 }
 .content{
-  text-align: left;
+  text-align: center;
 }
 .card{
-  padding: 8px 16px;
+  padding: 8px 25px;
   background: #1b1b1b;
   margin: 16px 0;
   border-radius: 20px;
+  text-align: left;
 }
 .card p{
   margin: 6px 0;
@@ -53,7 +51,7 @@ button:hover{
 }
 .card h3{
   margin: 10px 0;
-  color: #ffff57;
+  color: #FDF200;
 }
 button:disabled{
   opacity: 0.2;

@@ -9,6 +9,7 @@ const fetchPlanets = async (key, page) => {
 }
 
 const Planets = () => {
+  
   const [ page, setPage ] = useState(1);
   const {
     resolvedData,
